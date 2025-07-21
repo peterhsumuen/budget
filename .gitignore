@@ -5,20 +5,35 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
+.pnpm-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+.next/    # For Next.js
+out/     # For Next.js
+dist/    # For Vite, Parcel, etc.
+build/   # For Create React App, etc.
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# TypeScript
+*.tsbuildinfo
+
+# Editors
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Misc
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.tgz
+.cache
+.temp
+.tmp
+
+# Vite specific
+.vite/
