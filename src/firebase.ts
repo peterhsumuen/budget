@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// TODO: 🔐 請換成你自己的 Firebase config
+// Your Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDEwtAtYOHru_6j6nNkCDeJX7Vq3MN8yJc",
   authDomain: "willmington-1caef.firebaseapp.com",
@@ -13,6 +13,9 @@ const firebaseConfig = {
   appId: "1:343677991901:web:83b3b16f39974161961434"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Export Auth and Firestore instances
 export const auth = getAuth(app);
 export const db = getFirestore(app);
